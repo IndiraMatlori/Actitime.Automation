@@ -73,14 +73,14 @@ WebDriver driver;
         driver.findElement(By.xpath("//div[@class='edit_user_sliding_panel sliding_panel components_panelContainer']/descendant::span[17]")).click();
 
         actions.scrollToElement(element1).build().perform();
-        driver.findElement(By.xpath("//div[@id='editUserPanel']/descendant::input[17]")).sendKeys("500");
+        driver.findElement(By.xpath("(//span[text()='Add rates'])[1]")).sendKeys("500");
         WebElement element2=driver.findElement(By.xpath("(//div[@class='copyLink_panelContainer']/following::div[1])[1]"));
        js.executeScript("arguments[0].click();",element2);
         // Alert alert = driver.switchTo().alert();
         // alert.accept();
 
-         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='userNameCell first']/following::div[6]"))).click();
-         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='userNameCell first']/following::div[6]"))).click();
+        // wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='userNameCell first']/following::div[6]"))).click();
+        // wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='userNameCell first']/following::div[6]"))).click();
         //Alert alert = driver.switchTo().alert();alert.accept();
           wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='accountSettingsTab selected']/child::span"))).click();
        // Alert alert1 = driver.switchTo().alert();alert1.accept();

@@ -37,7 +37,6 @@ public class Baseclass {
                 chromeoptions.addArguments("--remote-allow-origins=*");
                 driver =new ChromeDriver(chromeoptions);
                 break;
-
         }
      driver.manage().window().maximize();
         return  driver;
