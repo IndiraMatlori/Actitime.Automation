@@ -46,7 +46,7 @@ public class AddUserinActitime extends Baseclass {
         // navigate to user module and click on it
         driver.findElement(By.xpath("//div[@id='container_users']/following::div[1]")).click();
         Thread.sleep(5000);
-        System.out.println("Hello");
+        System.out.println("Hello world");
         //click on New User Button
         driver.findElement(By.xpath("//div[text()='New User']")).click();
         Thread.sleep(5000);
