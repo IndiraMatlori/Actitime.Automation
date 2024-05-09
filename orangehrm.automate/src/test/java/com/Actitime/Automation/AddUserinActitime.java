@@ -1,25 +1,42 @@
 package com.Actitime.Automation;
 
+import com.actitime.automation.Baseclass;
+import com.actitime.automation.CommonFunction;
 import com.orangehrm.automation.CommonFunctions;
 import com.sun.jdi.ByteValue;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-public class AddUserinActitime {
-    public static void main(String[] args) throws Exception {
-        CommonFunctions commonFunctions = new CommonFunctions();
-       WebDriver driver = commonFunctions.lauchBrowser("chrome");
-        driver.get("https://online.actitime.com/imatlori1");
+public class AddUserinActitime extends Baseclass {
+    WebDriver driver;
+    CommonFunction commonFunction;
+
+    @BeforeMethod
+    public void setup() throws Exception {
+        driver = launchBrowser("chrome");
+        driver.get("https://online.actitime.com/imatlori");
+        commonFunction = new CommonFunction(driver);
         //navigate to browser
         driver.manage().window().maximize();
-        Thread.sleep(5000);
-         //locate username element and enter username
+    }
+
+    @Test
+    public void AddUser() throws Exception {
+        //locate username element and enter username
+        commonFunction.waitforElementtobepresent(By.id("username"));
         driver.findElement(By.id("username")).sendKeys("indiramatlori653@gmail.com");
         //locate password element and  entre password
         driver.findElement(By.name("pwd")).sendKeys("indira@1234");
-        Thread.sleep(1000);
+        commonFunction.waitforElementtobepresent(By.xpath("//a[@id='loginButton']/child::div"));
         //click on loginbutton
         driver.findElement(By.xpath("//a[@id='loginButton']/child::div")).click();
         Thread.sleep(10000);
@@ -29,6 +46,7 @@ public class AddUserinActitime {
         // navigate to user module and click on it
         driver.findElement(By.xpath("//div[@id='container_users']/following::div[1]")).click();
         Thread.sleep(5000);
+        System.out.println("Hello");
         //click on New User Button
         driver.findElement(By.xpath("//div[text()='New User']")).click();
         Thread.sleep(5000);
@@ -40,16 +58,23 @@ public class AddUserinActitime {
         driver.findElement(By.id("createUserPanel_emailField")).sendKeys("indiramatlori@gmail.com");
         Thread.sleep(5000);
         //click department not Assigned dropdown
-       driver.findElement(By.xpath("//div[@class='title'][text()='-- department not assigned --']")).click();
+        driver.findElement(By.xpath("//div[@class='title'][text()='-- department not assigned --']")).click();
         Thread.sleep(5000);
         //selected the department and click on it
-       driver.findElement(By.xpath("//div[text()='-- new department --']/following::div[2]")).click();
+        driver.findElement(By.xpath("//div[text()='-- new department --']/following::div[2]")).click();
         Thread.sleep(5000);
         //click on save&send Invitation Button
         driver.findElement(By.xpath("//div[text()='Save & Send Invitation']")).click();
         Thread.sleep(5000);
         //click on close text
-        driver.findElement(By.xpath("//span[text()='Invite one more user']/following::div[1]")).click();
-
+           /* JavascriptExecutor js=(JavascriptExecutor)driver;
+            WebElement close =driver.findElement(By.xpath("//span[text()='Invite one more user']/following::div[1]"));
+            js.executeScript("arguments[0].click();",close);*/
+        WebElement closeButton = driver.findElement(By.xpath("//span[text()='Invite one more user']/following::div[1]"));
+        Actions actions = new Actions(driver);
+        actions.moveToElement(closeButton).build().perform();
+        closeButton.click();
     }
 }
+
+
