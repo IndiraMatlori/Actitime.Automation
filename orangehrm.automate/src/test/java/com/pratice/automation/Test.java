@@ -41,8 +41,9 @@ public class Test {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='root']/descendant::button[2]")));
         JavascriptExecutor js=(JavascriptExecutor)driver;
         //and then click on the add bulk order button
+        Thread.sleep(5000);
 
-        WebElement bulkorder=driver.findElement(By.xpath("//h4[text()='Orders']//following::button[1]"));
+        WebElement bulkorder=driver.findElement(By.xpath("//*[@id='root']/div/div/div[2]/div/div/div[2]/div[2]/button"));
         bulkorder.click();
         //js.executeScript("arguments[0].click();",bulkorder);
 

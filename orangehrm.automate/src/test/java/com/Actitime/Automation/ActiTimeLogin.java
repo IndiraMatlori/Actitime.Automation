@@ -13,13 +13,13 @@ public class ActiTimeLogin {
     public static void main(String[] arg) throws Exception {
         CommonFunctions commonFunctions = new CommonFunctions();
         WebDriver driver = commonFunctions.lauchBrowser("chrome");
-        driver.get("https://online.actitime.com/imatlori1");
+        driver.get("https://online.actitime.com/imatlori");
         driver.manage().window().maximize();
 
        // locate username element and enter username
        driver.findElement(By.name("username")).sendKeys("indiramatlori653@gmail.com");
        //locate password element and  entre password
-
+        driver.findElement(By.name("password")).sendKeys("indira@1234");
         Thread.sleep(5000);
         //click on loginbutton
         driver.findElement(By.xpath("//a[@id='loginButton']/child::div")).click();

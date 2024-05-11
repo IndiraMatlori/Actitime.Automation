@@ -14,7 +14,7 @@ public class CreateCustomerActi {
         WebDriver driver = new ChromeDriver(options);
 
         // navigate to browser
-                driver.get("https://online.actitime.com/imatlori1");
+                driver.get("https://online.actitime.com/imatlori");
         //wait for browser to launch
         Thread.sleep(5000);
 

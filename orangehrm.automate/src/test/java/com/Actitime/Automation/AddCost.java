@@ -75,13 +75,13 @@ WebDriver driver;
         actions.scrollToElement(element1).build().perform();
         driver.findElement(By.xpath("//div[@id='editUserPanel']/descendant::input[17]")).sendKeys("500");
         WebElement element2=driver.findElement(By.xpath("(//div[@class='copyLink_panelContainer']/following::div[1])[1]"));
-       js.executeScript("arguments[0].click();",element2);
-
-
-
-         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='userNameCell first']/following::div[6]"))).click();
-         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='userNameCell first']/following::div[6]"))).click();
-//          wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='accountSettingsTab selected']/child::span"))).click;
+//       js.executeScript("arguments[0].click();",element2);
+//
+//
+//
+//         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='userNameCell first']/following::div[6]"))).click();
+//         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='userNameCell first']/following::div[6]"))).click();
+////          wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='accountSettingsTab selected']/child::span"))).click;
          //driver.findElement(By.xpath("//div[@class='edit_user_sliding_panel sliding_panel components_panelContainer']/descendant::span[17]")).click();
 
 

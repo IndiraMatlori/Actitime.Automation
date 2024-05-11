@@ -11,7 +11,7 @@ public class BlankUserFields {
         WebDriver driver;
         CommonFunctions commonFunctions = new CommonFunctions();
          driver = commonFunctions.lauchBrowser("chrome");
-        driver.get("https://online.actitime.com/imatlori1");
+        driver.get("2/imatlori1");
         //navigate to browser
         driver.manage().window().maximize();
         Thread.sleep(5000);
