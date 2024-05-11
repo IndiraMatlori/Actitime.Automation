@@ -38,6 +38,10 @@ public class CommonFunction{
         JavascriptExecutor js=(JavascriptExecutor)driver;
         js.executeScript("arguments[0].value='"+text+"';",element);
     }
+    public void clcikusingjs(WebElement element){
+        JavascriptExecutor js=(JavascriptExecutor)driver;
+        js.executeScript("arguments[0].click();",element);
+    }
 
 
     }
