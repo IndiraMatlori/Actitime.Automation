@@ -1,36 +1,44 @@
 package com.Actitime.Automation;
 
-import com.orangehrm.automation.CommonFunctions;
+import com.actitime.automation.BaseClass;
+import com.actitime.automation.CommonFunction;
+import com.actitime.automation.Loginclass;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.time.Duration;
 
-public class AddCost {
+public class AddCost extends BaseClass {
 WebDriver driver;
+CommonFunction commonFunction;
+Loginclass loginclass;
     @BeforeClass
-    public void setup() {
-
-        CommonFunctions commonFunctions = new CommonFunctions();
-        driver = commonFunctions.lauchBrowser("chrome");
+    public void setup()throws Exception {
+        driver=launchBrowser("chrome");
         driver.get("https://online.actitime.com/imatlori");
+        loginclass=new Loginclass(driver);
+        commonFunction=new CommonFunction(driver);
         driver.manage().window().maximize();
+        Thread.sleep(5000);
+
+    }
+    @BeforeMethod
+    public void login(){
+        loginclass.login("indiramatlori653@gmail.com","indira@1234");
+
     }
      @Test
      public void addrate() throws Exception {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         JavascriptExecutor js=(JavascriptExecutor)driver;
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("username"))).sendKeys("indiramatlori653@gmail.com");
-        driver.findElement(By.name("pwd")).sendKeys("indira@1234");
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='loginButton']/child::div"))).click();
 
       //  Thread.sleep(1000);
 
@@ -75,7 +83,7 @@ WebDriver driver;
         actions.scrollToElement(element1).build().perform();
         driver.findElement(By.xpath("//div[@id='editUserPanel']/descendant::input[17]")).sendKeys("500");
         WebElement element2=driver.findElement(By.xpath("(//div[@class='copyLink_panelContainer']/following::div[1])[1]"));
-//       js.executeScript("arguments[0].click();",element2);
+         js.executeScript("arguments[0].click();",element2);
 //
 //
 //

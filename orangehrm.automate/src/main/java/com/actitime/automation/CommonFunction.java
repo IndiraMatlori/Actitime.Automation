@@ -38,6 +38,25 @@ public class CommonFunction{
         JavascriptExecutor js=(JavascriptExecutor)driver;
         js.executeScript("arguments[0].value='"+text+"';",element);
     }
+    public void clickusingJS(WebElement element){
+        JavascriptExecutor js=(JavascriptExecutor)driver;
+        js.executeScript("arguments[0].click();",element);
+    }
+    public void scrollToElement(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView();", element);
+    }
+    public void ScrollBy(int x,int y){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy("+x+","+y+");");
+    }
+  /*public void click(WebElement element) {
+       waitElementToBeClickable(element);
+       element.click();}*/
+    public void click(By by){
+        fluentWait(by);
+        driver.findElement(by).click();
+    }
 
 
     }

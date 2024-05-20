@@ -1,45 +1,40 @@
 package com.Actitime.Automation;
 
-import com.actitime.automation.Baseclass;
+import com.actitime.automation.BaseClass;
 import com.actitime.automation.CommonFunction;
-import com.orangehrm.automation.CommonFunctions;
-import com.sun.jdi.ByteValue;
+import com.actitime.automation.Loginclass;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class AddUserinActitime extends Baseclass {
+public class
+AddUserinActitime extends BaseClass {
     WebDriver driver;
     CommonFunction commonFunction;
+    Loginclass loginclass;
 
-    @BeforeMethod
+    @BeforeClass
     public void setup() throws Exception {
         driver = launchBrowser("chrome");
+        loginclass=new Loginclass (driver);
         driver.get("https://online.actitime.com/imatlori");
+
+
         commonFunction = new CommonFunction(driver);
         //navigate to browser
         driver.manage().window().maximize();
     }
+    @BeforeMethod
+    public void login(){
+        loginclass.login("indiramatlori653@gmail.com","indira@1234");
+    }
 
     @Test
     public void AddUser() throws Exception {
-        //locate username element and enter username
-        commonFunction.waitforElementtobepresent(By.id("username"));
-        driver.findElement(By.id("username")).sendKeys("indiramatlori653@gmail.com");
-        //locate password element and  entre password
-        driver.findElement(By.name("pwd")).sendKeys("indira@1234");
-        commonFunction.waitforElementtobepresent(By.xpath("//a[@id='loginButton']/child::div"));
-        //click on loginbutton
-        driver.findElement(By.xpath("//a[@id='loginButton']/child::div")).click();
-        Thread.sleep(10000);
         //navigate to task module and click
         driver.findElement(By.xpath("//div[@id='container_tasks']/following::div[1]")).click();
         Thread.sleep(5000);

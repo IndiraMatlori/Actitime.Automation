@@ -3,15 +3,24 @@ package com.Actitime.Automation;
 import com.orangehrm.automation.CommonFunctions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 public class DeleteDepartment {
-    public static void main(String[] args) throws Exception {
+    WebDriver driver;
+    @BeforeClass
+    public void setup()throws Exception {
         CommonFunctions commonFunctions = new CommonFunctions();
-        WebDriver driver = commonFunctions.lauchBrowser("chrome");
-        driver.get("https://online.actitime.com/imatlori1");
+         driver = commonFunctions.lauchBrowser("chrome");
+        driver.get("https://online.actitime.com/imatlori");
         //navigate to browser
         driver.manage().window().maximize();
         Thread.sleep(5000);
+    }
+    @Test
+            public void deletedepartment() throws Exception{
         //locate username element and enter username
         driver.findElement(By.id("username")).sendKeys("indiramatlori653@gmail.com");
         //locate password element and  entre password
@@ -20,9 +29,7 @@ public class DeleteDepartment {
         //click on loginbutton
         driver.findElement(By.xpath("//a[@id='loginButton']/child::div")).click();
         Thread.sleep(1000);
-        //navigate to task module and click
-        driver.findElement(By.xpath("//div[@id='container_tasks']/following::div[1]")).click();
-        Thread.sleep(5000);
+
         // navigate to user module and click on it
         driver.findElement(By.xpath("//div[@id='container_users']/following::div[1]")).click();
         Thread.sleep(5000);
@@ -56,9 +63,13 @@ public class DeleteDepartment {
        // driver.findElement(By.xpath("//div[@class='components_button addSeveralUsersButton dropdown']/child::div[1]")).click();
         //click on department button
         driver.findElement(By.xpath("//div[@class='userList_manageButtons_component_groupItem department ']")).click();
+        Thread.sleep(5000);
+        Actions actions = new Actions(driver);
+        WebElement element1= driver.findElement(By.xpath("//*[@id='groupManagementLightBox_userGroupNameCell_12']/div/div[1]"));
+        actions.moveToElement(element1).build().perform();
         //click on delete symbol
-        driver.findElement(By.id("groupManagementLightBox_userGroupDeleteLink_13")).click();
+        driver.findElement(By.xpath("//*[@id='groupManagementLightBox_userGroupDeleteLink_12']")).click();
         //click on yes Delete message
-        driver.findElement(By.id("groupManagementLightBox_confirmDeleteAcceptButton_13")).click();
+        driver.findElement(By.xpath("//*[@id='groupManagementLightBox_confirmDeleteAcceptButton_12']")).click();
     }
 }

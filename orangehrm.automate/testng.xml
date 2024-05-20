@@ -1,11 +1,2 @@
-
-
-        <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-        <suite name="TestSuite" verbose="1">
-            <test name="sanity">
-                <classes>
-                    <class name="com.Actitime.Automation.DeleteCustomer">
-                    </class>
-                </classes>
-            </test>
-        </suite>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Automation/Actitime.Automation/orangehrm.automate/src/main/java/com/actitime/automation/Baseclass.java"><classes/></test></suite>

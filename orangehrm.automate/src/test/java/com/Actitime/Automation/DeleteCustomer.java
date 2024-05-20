@@ -33,8 +33,7 @@ public class DeleteCustomer {
 
 
 
-   // @Test(priority = 2)
-   // public void dashboard() throws Exception {
+
         // verify u successfully login Or landed on Dashboard
         String landed = driver.findElement(By.xpath("//div[@id='container_tt']/following::div[1]")).getText();
         if (landed.equals("Time-Track")) {

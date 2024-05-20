@@ -63,11 +63,11 @@ public class CreateNewCustomer {
         driver.findElement(By.xpath("(//input[@placeholder='Enter task name'])[1]")).sendKeys("Indira");
         Thread.sleep(5000);
         //locate the task and enter the taskname2
-        driver.findElement(By.xpath("(//input[@placeholder='Enter task name'])[2]")).sendKeys("Varsha");
+        driver.findElement(By.xpath("(//input[@placeholder='Enter task name'])[2]")).sendKeys("Arjun");
        Thread.sleep(5000);
         //locate the task and enter the taskname3
         //driver.findElement(By.xpath("(//input[@placeholder='Enter task name'])[3]")).sendKeys("yukta");
-        Thread.sleep(5000);
+       // Thread.sleep(5000);
 
         //click on Assigned user button
 

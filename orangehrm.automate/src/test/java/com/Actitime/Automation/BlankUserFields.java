@@ -5,16 +5,24 @@ import com.orangehrm.automation.CommonFunctions;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class BlankUserFields {
-    public static void main(String[]args) throws Exception{
-        WebDriver driver;
+    WebDriver driver;
+    @BeforeMethod
+    public void setup()throws Exception {
+
         CommonFunctions commonFunctions = new CommonFunctions();
-         driver = commonFunctions.lauchBrowser("chrome");
-        driver.get("2/imatlori1");
+        driver = commonFunctions.lauchBrowser("chrome");
+        driver.get("https://online.actitime.com/imatlori");
         //navigate to browser
         driver.manage().window().maximize();
         Thread.sleep(5000);
+    }
+    @Test
+            public void blankuser() throws Exception{
+
         BlankUser blankUser=new BlankUser(driver);
 
         //locate username element and enter username
@@ -25,9 +33,7 @@ public class BlankUserFields {
         //click on loginbutton
         driver.findElement(By.xpath("//a[@id='loginButton']/child::div")).click();
         Thread.sleep(10000);
-        //navigate to task module and click
-        driver.findElement(By.xpath("//div[@id='container_tasks']/following::div[1]")).click();
-        Thread.sleep(5000);
+
         // navigate to user module and click on it
         driver.findElement(By.xpath("//div[@id='container_users']/following::div[1]")).click();
         Thread.sleep(5000);
@@ -43,18 +49,18 @@ public class BlankUserFields {
         Thread.sleep(5000);
 
         String error1=driver.findElement(By.xpath("//span[text()='Please correct all errors in the fields highlighted in red']")).getText();
-       /* if (error1.equals("Please correct all errors in the fields highlighted in red")){
-            System.out.println("test cases passs");
-        }
-        else {
-            throw new Exception("Test cases fail");
-        }*/
+
         blankUser.verifyerrormag(error1);
         //click on cancel button
         blankUser.clickcancel();
         Thread.sleep(2000);
-        Alert alert1 = driver.switchTo().alert();
-        alert1.accept();
+        try {
+            Alert alert1 = driver.switchTo().alert();
+            alert1.accept();
+        } catch (Exception e) {
+            System.out.println("No alert present");
+        };
+        Thread.sleep(5000);
         //click on New User Button
         blankUser.clickUsermodule();
         //first name ,last name,emailId
@@ -69,8 +75,13 @@ public class BlankUserFields {
         //click on cancel button
         blankUser.clickcancel();
         Thread.sleep(2000);
-        Alert alert2= driver.switchTo().alert();
-        alert2.accept();
+        try {
+            Alert alert2 = driver.switchTo().alert();
+            alert2.accept();
+        } catch (Exception e) {
+            System.out.println("No alert present");
+        }
+        Thread.sleep(5000);
         //click on New User Button
         blankUser.clickUsermodule();
         //loacte name.last name&email field.

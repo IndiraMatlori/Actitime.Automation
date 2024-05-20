@@ -13,7 +13,7 @@ public class StatusActi {
         WebDriver driver = new ChromeDriver(options);
 
         // navigate to browser
-        driver.get("https://online.actitime.com/imatlori1");
+        driver.get("https://online.actitime.com/imatlori");
         driver.manage().window().maximize();
         //wait for browser to launch
         Thread.sleep(1000);

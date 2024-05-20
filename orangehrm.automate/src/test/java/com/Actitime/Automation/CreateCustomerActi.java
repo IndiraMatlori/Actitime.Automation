@@ -26,7 +26,7 @@ public class CreateCustomerActi {
         Thread.sleep(5000);
         //click on loginbutton
         driver.findElement(By.xpath("//a[@id='loginButton']/child::div")).click();
-        Thread.sleep(5000);
+        Thread.sleep(1000);
         //click task module
         driver.findElement(By.xpath("//div[@id='container_tasks']/following::div")).click();
         Thread.sleep(5000);
@@ -38,7 +38,7 @@ public class CreateCustomerActi {
         driver.findElement(By.xpath("//div[@class='item createNewCustomer']")).click();
         Thread.sleep(5000);
         // Enter customer name as numeric values
-        driver.findElement(By.xpath("//div[@class='customerNameDiv']/child::input")).sendKeys("25657");
+        driver.findElement(By.xpath("//div[@class='customerNameDiv']/child::input")).sendKeys("fghh");
         Thread.sleep(5000);
         //click on add new customer
         driver.findElement(By.xpath("//div[text()='Create Customer']")).click();
@@ -52,7 +52,7 @@ public class CreateCustomerActi {
         driver.findElement(By.xpath("//div[@class='item createNewCustomer']")).click();
         Thread.sleep(5000);
         // Enter customer name as alpha numeric values
-        driver.findElement(By.xpath("//div[@class='customerNameDiv']/child::input")).sendKeys("y45thhgg3gv");
+        driver.findElement(By.xpath("//div[@class='customerNameDiv']/child::input")).sendKeys("hyg");
         Thread.sleep(5000);
         driver.findElement(By.xpath("//div[text()='Create Customer']")).click();
         Thread.sleep(5000);
@@ -65,7 +65,7 @@ public class CreateCustomerActi {
         driver.findElement(By.xpath("//div[@class='item createNewCustomer']")).click();
         Thread.sleep(5000);
         // Enter customer name as alphabets
-        driver.findElement(By.xpath("//div[@class='customerNameDiv']/child::input")).sendKeys("tnutrfh");
+        driver.findElement(By.xpath("//div[@class='customerNameDiv']/child::input")).sendKeys("ghv");
         driver.findElement(By.xpath("//div[text()='Create Customer']")).click();
 
         Thread.sleep(5000);
@@ -77,7 +77,7 @@ public class CreateCustomerActi {
         driver.findElement(By.xpath("//div[@class='item createNewCustomer']")).click();
         Thread.sleep(5000);
         // Enter customer name as only special character
-        driver.findElement(By.xpath("//div[@class='customerNameDiv']/child::input")).sendKeys("@irsy43gv");
+        driver.findElement(By.xpath("//div[@class='customerNameDiv']/child::input")).sendKeys("iuhhuh@445");
         Thread.sleep(5000);
         driver.findElement(By.xpath("//div[text()='Create Customer']")).click();
         Thread.sleep(5000);

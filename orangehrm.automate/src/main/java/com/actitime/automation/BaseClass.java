@@ -8,21 +8,20 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
-public class Baseclass {
-    WebDriver driver;
+public class BaseClass {
+    public WebDriver driver;
 
     public WebDriver launchBrowser(String browserName) {
         switch (browserName){
             case "chrome":
                 ChromeOptions options=new ChromeOptions();
-                options.setBrowserVersion("stable");
+                options.setBrowserVersion("121");
                 options.addArguments("--remote-allow-origins=*");
                 driver =new ChromeDriver(options);
                 break;
             case "edge":
                 EdgeOptions edgeOptions=new EdgeOptions();
-               edgeOptions.setBrowserVersion("stable");
-
+                edgeOptions.setBrowserVersion("stable");
                 driver =new EdgeDriver(edgeOptions);
                 break;
             case "firefox":
@@ -37,11 +36,8 @@ public class Baseclass {
                 chromeoptions.addArguments("--remote-allow-origins=*");
                 driver =new ChromeDriver(chromeoptions);
                 break;
-
         }
-     driver.manage().window().maximize();
-        return  driver;
+        driver.manage().window().maximize();
+        return driver;
     }
 }
-
-
