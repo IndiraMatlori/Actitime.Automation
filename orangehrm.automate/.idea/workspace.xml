@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ccb2278a-3870-499c-bac2-b7b708a0170a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="branch3" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+    <option name="showToolbar" value="false" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2dtdy45yMxqMlP0e1bFRoalayNi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ActiTimeLogin.executor": "Debug",
+    "Application.AddCost.executor": "Debug",
+    "Application.AddUserinActitime.executor": "Debug",
+    "Application.AmazonBrokenimg.executor": "Run",
+    "Application.BlankUserFields.executor": "Debug",
+    "Application.CreateCustomerActi.executor": "Debug",
+    "Application.CreateNewTask.executor": "Debug",
+    "Application.CreateProjectActi.executor": "Debug",
+    "Application.DatePicker.executor": "Run",
+    "Application.DeleteCustomer.executor": "Debug",
+    "Application.DeleteCustomerActi.executor": "Debug",
+    "Application.DeleteDepartment.executor": "Debug",
+    "Application.DeleteUser.executor": "Debug",
+    "Application.DropDownWithoutSelectClass (1).executor": "Run",
+    "Application.DropDownWithoutSelectClass.executor": "Run",
+    "Application.ExcelHandling.executor": "Run",
+    "Application.FindAmazonlinks.executor": "Debug",
+    "Application.FunctionalTest.executor": "Debug",
+    "Application.GetAllTasksActi.executor": "Run",
+    "Application.LoginTest.executor": "Run",
+    "Application.MoveTask.executor": "Debug",
+    "Application.MultiBrowser.executor": "Run",
+    "Application.ResolutionTest.executor": "Debug",
+    "Application.SelectDropDown.executor": "Run",
+    "Application.SerachBar.executor": "Debug",
+    "Application.StatusActi.executor": "Debug",
+    "Application.Test.executor": "Debug",
+    "Application.Test1.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.ActiLogin.executor": "Debug",
+    "TestNG.ActiTimeLogin (1).executor": "Debug",
+    "TestNG.ActiTimeLogin.executor": "Run",
+    "TestNG.AddCost (1).executor": "Debug",
+    "TestNG.AddCost.executor": "Debug",
+    "TestNG.AddUserinActitime (1).executor": "Debug",
+    "TestNG.AddUserinActitime (2).executor": "Debug",
+    "TestNG.AddUserinActitime.executor": "Debug",
+    "TestNG.C:/Automation/Actitime.Automation/orangehrm.automate/testng.xml.executor": "Run",
+    "TestNG.C:/Users/Indira/IdeaProjects/orangehrm.automate/testng.xml.executor": "Debug",
+    "TestNG.CreateNewCustomer (1).executor": "Debug",
+    "TestNG.CreateNewCustomer.executor": "Debug",
+    "TestNG.CreateNewCustomer.login.executor": "Debug",
+    "TestNG.CreateNewTask (1).executor": "Debug",
+    "TestNG.CreateNewTask (2).executor": "Debug",
+    "TestNG.CreateNewTask (3).executor": "Run",
+    "TestNG.CreateNewTask.executor": "Debug",
+    "TestNG.DeleteCustomer (1).executor": "Debug",
+    "TestNG.DeleteCustomer.Task.executor": "Debug",
+    "TestNG.DeleteCustomer.executor": "Debug",
+    "TestNG.DeleteCustomer.login.executor": "Debug",
+    "TestNG.DeleteDepartment.executor": "Run",
+    "TestNG.ExcelHandlingActi.executor": "Debug",
+    "TestNG.ExcelHandlingWrite.WriteData.executor": "Debug",
+    "TestNG.ExcelHandlingWrite.executor": "Run",
+    "TestNG.LoginPageActi.loginwithvalidcredentials.executor": "Run",
+    "TestNG.LoginTest (1).executor": "Debug",
+    "TestNG.LoginTest (2).executor": "Debug",
+    "TestNG.LoginTest.executor": "Debug",
+    "TestNG.LoginTest.testlogin (1).executor": "Debug",
+    "TestNG.LoginTest.testlogin.executor": "Debug",
+    "TestNG.LoginTestng.executor": "Run",
+    "TestNG.LoginTestng.loginwithinvalidcredentilas.executor": "Run",
+    "TestNG.LoginTestng.loginwithvalidcredentials.executor": "Run",
+    "TestNG.LoginpageTestng (1).executor": "Debug",
+    "TestNG.LoginpageTestng (2).executor": "Debug",
+    "TestNG.LoginpageTestng (3).executor": "Debug",
+    "TestNG.LoginpageTestng.Test1.executor": "Debug",
+    "TestNG.LoginpageTestng.executor": "Debug",
+    "TestNG.LoginpageTestng.test.executor": "Debug",
+    "TestNG.TestngLoginPage (1).executor": "Debug",
+    "TestNG.TestngLoginPage.executor": "Run",
+    "TestNG.TestngLoginPage.loginwithinvalidcredentilas.executor": "Run",
+    "TestNG.TestngLoginPage.loginwithvalidcredentials.executor": "Run",
+    "TestNG.TestngLoginPage1.Test1.executor": "Run",
+    "TestNG.TestngLoginPage1.executor": "Debug",
+    "TestNG.TestngLoginPage1.loginwithvalidcredentials.executor": "Debug",
+    "TestNG.TestngLoginPage1.test.executor": "Debug",
+    "TestNG.testNg.executor": "Debug",
+    "ToolWindowProblems.ShowToolbar": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Automation/Actitime.Automation/orangehrm.automate",
+    "onboarding.tips.debug.path": "C:/Users/Indira/IdeaProjects/orangehrm.automate/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.orangehrm.automation" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Automation/Actitime.Automation/orangehrm.automate/testng.xml">
+    <configuration name="BlankUserFields" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Actitime.Automation.BlankUserFields" />
+      <module name="orangehrm.automate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Actitime.Automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.orangehrm.automation.LoginTest" />
+      <module name="orangehrm.automate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Actitime.Automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActiTimeLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="orangehrm.automate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Actitime.Automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Actitime.Automation" />
+      <option name="MAIN_CLASS_NAME" value="com.Actitime.Automation.ActiTimeLogin" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddCost" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="orangehrm.automate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Actitime.Automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Actitime.Automation" />
+      <option name="MAIN_CLASS_NAME" value="com.Actitime.Automation.AddCost" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Automation/Actitime.Automation/orangehrm.automate/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="orangehrm.automate" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteDepartment" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="orangehrm.automate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Actitime.Automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Actitime.Automation" />
+      <option name="MAIN_CLASS_NAME" value="com.Actitime.Automation.DeleteDepartment" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Automation/Actitime.Automation/orangehrm.automate/testng.xml" />
+        <item itemvalue="TestNG.ActiTimeLogin" />
+        <item itemvalue="TestNG.DeleteDepartment" />
+        <item itemvalue="TestNG.AddCost" />
+        <item itemvalue="Application.BlankUserFields" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-ae57be32" />
+        <option value="jdk-11.0.22-semeru-11.0.22-e1d2075fd9a7-24488771" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ccb2278a-3870-499c-bac2-b7b708a0170a" name="Changes" comment="" />
+      <created>1710831571005</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710831571005</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/Actitime/Automation/ActiTimeLogin.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/orangehrm/automation/LoginPage.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/Actitime/Automation/ActiTimeLogin.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/Actitime/Automation/ActiTimeLogin.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
