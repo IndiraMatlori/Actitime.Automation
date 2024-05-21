@@ -29,8 +29,9 @@ AddUserinActitime extends BaseClass {
         driver.manage().window().maximize();
     }
     @BeforeMethod
-    public void login(){
+    public void login()throws Exception{
         loginclass.login("indiramatlori653@gmail.com","indira@1234");
+        Thread.sleep(5000);
     }
 
     @Test

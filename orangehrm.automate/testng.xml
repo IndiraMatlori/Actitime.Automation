@@ -2,8 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
    <test name="regression" >
-      <classes>
-        <class name="com.Actitime.Automation.CreateNewCustomer"></class>
-      </classes>
+
+        <packages>
+            <package name="com.Actitime.Automation"></package>
+        </packages>
+
    </test>
+
 </suite>

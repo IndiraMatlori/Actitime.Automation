@@ -3,15 +3,22 @@ package com.Actitime.Automation;
 import com.orangehrm.automation.CommonFunctions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 public class SerachBar {
-    public static void main(String[] args) throws Exception {
-        CommonFunctions commonFunctions = new CommonFunctions();
-        WebDriver driver = commonFunctions.lauchBrowser("chrome");
-        driver.get("https://online.actitime.com/imatlori1");
-        //navigate to browser
-        driver.manage().window().maximize();
-        Thread.sleep(5000);
+    WebDriver driver;
+    @BeforeClass
+   public void setup() throws Exception {
+       CommonFunctions commonFunctions = new CommonFunctions();
+       driver = commonFunctions.lauchBrowser("chrome");
+       driver.get("https://online.actitime.com/imatlori");
+       //navigate to browser
+       driver.manage().window().maximize();
+       Thread.sleep(5000);
+   }
+   @Test
+   public void serachbar()throws Exception{
         //locate username element and enter username
         driver.findElement(By.id("username")).sendKeys("indiramatlori653@gmail.com");
         //locate password element and  entre password

@@ -1,4 +1,4 @@
-package com.Actitime.Automation;
+package com.orangehrm.automation;
 
 import com.orangehrm.automation.LoginPage;
 import org.openqa.selenium.By;

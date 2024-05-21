@@ -1,23 +1,25 @@
 package com.Actitime.Automation;
 
+import com.orangehrm.automation.CommonFunctions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Test;
 
 public class CreateCustomerActi {
-    public static void main(String[] args) throws Exception {
-        ChromeOptions options = new ChromeOptions();
-        options.setBrowserVersion("121");
-        options.addArguments("--remote-allow-origins=*");
 
-        WebDriver driver = new ChromeDriver(options);
-
-        // navigate to browser
-                driver.get("https://online.actitime.com/imatlori");
-        //wait for browser to launch
+        WebDriver driver;
+    public void setup() throws Exception {
+        CommonFunctions commonFunctions = new CommonFunctions();
+        driver = commonFunctions.lauchBrowser("chrome");
+        driver.get("https://online.actitime.com/imatlori");
+        //navigate to browser
+        driver.manage().window().maximize();
         Thread.sleep(5000);
-
+    }
+    @Test
+    public void createcust() throws Exception{
         // locate username element and enter username
         driver.findElement(By.name("username")).sendKeys("indiramatlori653@gmail.com");
 
@@ -38,7 +40,7 @@ public class CreateCustomerActi {
         driver.findElement(By.xpath("//div[@class='item createNewCustomer']")).click();
         Thread.sleep(5000);
         // Enter customer name as numeric values
-        driver.findElement(By.xpath("//div[@class='customerNameDiv']/child::input")).sendKeys("fghh");
+        driver.findElement(By.xpath("//div[@class='customerNameDiv']/child::input")).sendKeys("123");
         Thread.sleep(5000);
         //click on add new customer
         driver.findElement(By.xpath("//div[text()='Create Customer']")).click();
@@ -52,7 +54,7 @@ public class CreateCustomerActi {
         driver.findElement(By.xpath("//div[@class='item createNewCustomer']")).click();
         Thread.sleep(5000);
         // Enter customer name as alpha numeric values
-        driver.findElement(By.xpath("//div[@class='customerNameDiv']/child::input")).sendKeys("hyg");
+        driver.findElement(By.xpath("//div[@class='customerNameDiv']/child::input")).sendKeys("ABC123");
         Thread.sleep(5000);
         driver.findElement(By.xpath("//div[text()='Create Customer']")).click();
         Thread.sleep(5000);
@@ -65,7 +67,7 @@ public class CreateCustomerActi {
         driver.findElement(By.xpath("//div[@class='item createNewCustomer']")).click();
         Thread.sleep(5000);
         // Enter customer name as alphabets
-        driver.findElement(By.xpath("//div[@class='customerNameDiv']/child::input")).sendKeys("ghv");
+        driver.findElement(By.xpath("//div[@class='customerNameDiv']/child::input")).sendKeys("ABCEGF");
         driver.findElement(By.xpath("//div[text()='Create Customer']")).click();
 
         Thread.sleep(5000);
@@ -77,7 +79,7 @@ public class CreateCustomerActi {
         driver.findElement(By.xpath("//div[@class='item createNewCustomer']")).click();
         Thread.sleep(5000);
         // Enter customer name as only special character
-        driver.findElement(By.xpath("//div[@class='customerNameDiv']/child::input")).sendKeys("iuhhuh@445");
+        driver.findElement(By.xpath("//div[@class='customerNameDiv']/child::input")).sendKeys("@#$%!");
         Thread.sleep(5000);
         driver.findElement(By.xpath("//div[text()='Create Customer']")).click();
         Thread.sleep(5000);

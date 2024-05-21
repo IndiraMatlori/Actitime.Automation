@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class BlankUserFields {
+public class BlankUserFields  {
     WebDriver driver;
     @BeforeMethod
     public void setup()throws Exception {
@@ -21,9 +21,9 @@ public class BlankUserFields {
         Thread.sleep(5000);
     }
     @Test
-            public void blankuser() throws Exception{
+            public void blankuser() throws Exception {
 
-        BlankUser blankUser=new BlankUser(driver);
+        BlankUser blankUser = new BlankUser(driver);
 
         //locate username element and enter username
         driver.findElement(By.id("username")).sendKeys("indiramatlori653@gmail.com");
@@ -41,14 +41,14 @@ public class BlankUserFields {
         blankUser.clickUsermodule();
         Thread.sleep(5000);
         //first name ,last name,emailId
-        blankUser.blanksfields("","Matlori","indiramatlori@gmail.com");
+        blankUser.blanksfields("", "Matlori", "indiramatlori@gmail.com");
         Thread.sleep(5000);
         //locate last name
         //click on save&send Invitation Button
         blankUser.clicksave();
         Thread.sleep(5000);
 
-        String error1=driver.findElement(By.xpath("//span[text()='Please correct all errors in the fields highlighted in red']")).getText();
+        String error1 = driver.findElement(By.xpath("//span[text()='Please correct all errors in the fields highlighted in red']")).getText();
 
         blankUser.verifyerrormag(error1);
         //click on cancel button
@@ -59,18 +59,19 @@ public class BlankUserFields {
             alert1.accept();
         } catch (Exception e) {
             System.out.println("No alert present");
-        };
+        }
+        ;
         Thread.sleep(5000);
         //click on New User Button
         blankUser.clickUsermodule();
         //first name ,last name,emailId
-        blankUser.blanksfields("","","indiramatlori@gmail.com");
+        blankUser.blanksfields("", "", "indiramatlori@gmail.com");
         Thread.sleep(5000);
         //click on save&send invitation button
         blankUser.clicksave();
         Thread.sleep(5000);
 
-        error1=driver.findElement(By.xpath("//span[text()='Please correct all errors in the fields highlighted in red']")).getText();
+        error1 = driver.findElement(By.xpath("//span[text()='Please correct all errors in the fields highlighted in red']")).getText();
         blankUser.verifyerrormag(error1);
         //click on cancel button
         blankUser.clickcancel();
@@ -85,19 +86,21 @@ public class BlankUserFields {
         //click on New User Button
         blankUser.clickUsermodule();
         //loacte name.last name&email field.
-        blankUser.blanksfields("234343","","indiramatlori@gmail.com");
+        blankUser.blanksfields("234343", "", "indiramatlori@gmail.com");
         Thread.sleep(5000);
         //click on save&send invitation button
         blankUser.clicksave();
         Thread.sleep(5000);
 
-        error1=driver.findElement(By.xpath("//span[text()='Please correct all errors in the fields highlighted in red']")).getText();
+        error1 = driver.findElement(By.xpath("//span[text()='Please correct all errors in the fields highlighted in red']")).getText();
         blankUser.verifyerrormag(error1);
         //click on cancel button
         blankUser.clickcancel();
         Thread.sleep(2000);
         Alert alert3 = driver.switchTo().alert();
         alert3.accept();
+
+
         //click on New User Button
         blankUser.clickUsermodule();
         Thread.sleep(5000);

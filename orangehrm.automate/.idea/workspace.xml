@@ -5,11 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccb2278a-3870-499c-bac2-b7b708a0170a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/CreateUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/FileUploadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actitime/automation/CommonFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actitime/automation/CommonFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/orangehrm/automation/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/orangehrm/automation/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/ActiTimeLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/ActiTimeLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/AddCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/orangehrm/automation/AddCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/AddUserinActitime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/AddUserinActitime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/BlankUserFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/BlankUserFields.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/CreateCustomerActi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/CreateCustomerActi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/CreateNewCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/CreateNewCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/DatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pratice/automation/DatePicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/DeleteCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/DeleteCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/DeleteDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/CreateDepartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/DeleteUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/DropDownWithoutSelectClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/orangehrm/automation/DropDownWithoutSelectClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/GetAllTasksActi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/GetAllTasksActi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/MoveTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/MoveTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/SerachBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/SerachBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/StatusActi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Actitime/Automation/StatusActi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,37 +84,39 @@
     "Application.CreateCustomerActi.executor": "Debug",
     "Application.CreateNewTask.executor": "Debug",
     "Application.CreateProjectActi.executor": "Debug",
-    "Application.DatePicker.executor": "Run",
+    "Application.CreateUser.executor": "Debug",
+    "Application.DatePicker.executor": "Debug",
     "Application.DeleteCustomer.executor": "Debug",
     "Application.DeleteCustomerActi.executor": "Debug",
     "Application.DeleteDepartment.executor": "Debug",
-    "Application.DeleteUser.executor": "Debug",
+    "Application.DeleteUser.executor": "Run",
     "Application.DropDownWithoutSelectClass (1).executor": "Run",
     "Application.DropDownWithoutSelectClass.executor": "Run",
     "Application.ExcelHandling.executor": "Run",
     "Application.FindAmazonlinks.executor": "Debug",
     "Application.FunctionalTest.executor": "Debug",
-    "Application.GetAllTasksActi.executor": "Run",
+    "Application.GetAllTasksActi.executor": "Debug",
     "Application.LoginTest.executor": "Run",
-    "Application.MoveTask.executor": "Debug",
+    "Application.MoveTask.executor": "Run",
     "Application.MultiBrowser.executor": "Run",
     "Application.ResolutionTest.executor": "Debug",
     "Application.SelectDropDown.executor": "Run",
     "Application.SerachBar.executor": "Debug",
-    "Application.StatusActi.executor": "Debug",
+    "Application.StatusActi.executor": "Run",
     "Application.Test.executor": "Debug",
     "Application.Test1.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.ActiLogin.executor": "Debug",
     "TestNG.ActiTimeLogin (1).executor": "Debug",
-    "TestNG.ActiTimeLogin.executor": "Run",
+    "TestNG.ActiTimeLogin.executor": "Debug",
     "TestNG.AddCost (1).executor": "Debug",
     "TestNG.AddCost.executor": "Debug",
     "TestNG.AddUserinActitime (1).executor": "Debug",
     "TestNG.AddUserinActitime (2).executor": "Debug",
     "TestNG.AddUserinActitime.executor": "Debug",
-    "TestNG.C:/Automation/Actitime.Automation/orangehrm.automate/testng.xml.executor": "Run",
+    "TestNG.C:/Automation/Actitime.Automation/orangehrm.automate/testng.xml.executor": "Debug",
     "TestNG.C:/Users/Indira/IdeaProjects/orangehrm.automate/testng.xml.executor": "Debug",
     "TestNG.CreateNewCustomer (1).executor": "Debug",
     "TestNG.CreateNewCustomer.executor": "Debug",
@@ -106,14 +125,18 @@
     "TestNG.CreateNewTask (2).executor": "Debug",
     "TestNG.CreateNewTask (3).executor": "Run",
     "TestNG.CreateNewTask.executor": "Debug",
+    "TestNG.DatePicker.executor": "Run",
     "TestNG.DeleteCustomer (1).executor": "Debug",
     "TestNG.DeleteCustomer.Task.executor": "Debug",
     "TestNG.DeleteCustomer.executor": "Debug",
     "TestNG.DeleteCustomer.login.executor": "Debug",
-    "TestNG.DeleteDepartment.executor": "Run",
+    "TestNG.DeleteDepartment.executor": "Debug",
+    "TestNG.DeleteUser.executor": "Debug",
     "TestNG.ExcelHandlingActi.executor": "Debug",
     "TestNG.ExcelHandlingWrite.WriteData.executor": "Debug",
     "TestNG.ExcelHandlingWrite.executor": "Run",
+    "TestNG.FileUploadTest.executor": "Run",
+    "TestNG.GetAllTasksActi.executor": "Debug",
     "TestNG.LoginPageActi.loginwithvalidcredentials.executor": "Run",
     "TestNG.LoginTest (1).executor": "Debug",
     "TestNG.LoginTest (2).executor": "Debug",
@@ -129,6 +152,8 @@
     "TestNG.LoginpageTestng.Test1.executor": "Debug",
     "TestNG.LoginpageTestng.executor": "Debug",
     "TestNG.LoginpageTestng.test.executor": "Debug",
+    "TestNG.MoveTask.executor": "Debug",
+    "TestNG.SerachBar.executor": "Run",
     "TestNG.TestngLoginPage (1).executor": "Debug",
     "TestNG.TestngLoginPage.executor": "Run",
     "TestNG.TestngLoginPage.loginwithinvalidcredentilas.executor": "Run",
@@ -156,12 +181,12 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.C:/Automation/Actitime.Automation/orangehrm.automate/testng.xml">
-    <configuration name="BlankUserFields" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Actitime.Automation.BlankUserFields" />
+    <configuration name="LoginTest" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.orangehrm.automation.LoginTest" />
       <module name="orangehrm.automate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Actitime.Automation.*" />
+          <option name="PATTERN" value="com.orangehrm.automation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,12 +194,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.orangehrm.automation.LoginTest" />
+    <configuration name="StatusActi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Actitime.Automation.StatusActi" />
       <module name="orangehrm.automate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Actitime.Automation.*" />
+          <option name="PATTERN" value="com.orangehrm.automation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -186,7 +211,7 @@
       <module name="orangehrm.automate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Actitime.Automation.*" />
+          <option name="PATTERN" value="com.orangehrm.automation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -203,12 +228,12 @@
       <module name="orangehrm.automate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Actitime.Automation.*" />
+          <option name="PATTERN" value="com.orangehrm.automation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.Actitime.Automation" />
-      <option name="MAIN_CLASS_NAME" value="com.Actitime.Automation.AddCost" />
+      <option name="MAIN_CLASS_NAME" value="com.orangehrm.automation.AddCost" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -226,7 +251,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteDepartment" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FileUploadTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="orangehrm.automate" />
       <extension name="coverage">
         <pattern>
@@ -235,7 +260,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.Actitime.Automation" />
-      <option name="MAIN_CLASS_NAME" value="com.Actitime.Automation.DeleteDepartment" />
+      <option name="MAIN_CLASS_NAME" value="com.Actitime.Automation.FileUploadTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -246,10 +271,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Automation/Actitime.Automation/orangehrm.automate/testng.xml" />
-        <item itemvalue="TestNG.ActiTimeLogin" />
-        <item itemvalue="TestNG.DeleteDepartment" />
+        <item itemvalue="TestNG.FileUploadTest" />
         <item itemvalue="TestNG.AddCost" />
-        <item itemvalue="Application.BlankUserFields" />
+        <item itemvalue="TestNG.ActiTimeLogin" />
+        <item itemvalue="Application.StatusActi" />
       </list>
     </recent_temporary>
   </component>
@@ -277,24 +302,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/Actitime/Automation/ActiTimeLogin.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/orangehrm/automation/LoginPage.java</url>
           <line>18</line>
           <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/Actitime/Automation/ActiTimeLogin.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/Actitime/Automation/ActiTimeLogin.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

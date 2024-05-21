@@ -15,7 +15,7 @@ public class DeleteCustomer {
     {
         CommonFunctions commonFunctions = new CommonFunctions();
          driver = commonFunctions.lauchBrowser("chrome");
-        driver.get("https://online.actitime.com/imatlori1");
+        driver.get("https://online.actitime.com/imatlori");
         driver.manage().window().maximize();
         Thread.sleep(5000);
     }

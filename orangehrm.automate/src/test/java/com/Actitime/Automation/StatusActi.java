@@ -21,10 +21,10 @@ public class StatusActi {
         driver.findElement(By.name("username")).sendKeys("indiramatlori653@gmail.com");
         driver.findElement(By.name("pwd")).sendKeys("indira@1234");
         driver.findElement(By.xpath("//a[@id='loginButton']/child::div[1]")).click();
-        Thread.sleep(50000);
+        Thread.sleep(5000);
         // click on task module
         driver.findElement(By.xpath("//div[@id='container_tasks']/following::div")).click();
-        Thread.sleep(50000);
+        Thread.sleep(5000);
         //click on flight operations project
         driver.findElement(By.xpath("//div[@class='text'][text()='Flight operations']")).click();
         Thread.sleep(1000);
